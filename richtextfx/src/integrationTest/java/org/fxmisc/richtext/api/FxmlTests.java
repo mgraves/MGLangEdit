@@ -1,4 +1,4 @@
-package integrationTest.java.org.fxmisc.richtext.api;
+package org.fxmisc.richtext.api;
 
 import java.io.IOException;
 import javafx.stage.Stage;
@@ -6,7 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.LoadException;
 import org.fxmisc.richtext.RichTextFXTestBase;
 import org.fxmisc.richtext.StyleClassedTextArea;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertNotNull;
 

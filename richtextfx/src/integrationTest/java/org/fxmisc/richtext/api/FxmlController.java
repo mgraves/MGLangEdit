@@ -1,4 +1,4 @@
-package integrationTest.java.org.fxmisc.richtext.api;
+package org.fxmisc.richtext.api;
 
 import javafx.fxml.FXML;
 import javafx.scene.input.MouseEvent;

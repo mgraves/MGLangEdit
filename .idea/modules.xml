@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/langEdit.iml" filepath="$PROJECT_DIR$/langEdit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MGLangEdit.iml" filepath="$PROJECT_DIR$/MGLangEdit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MGLangEditor/MGLangEditor.iml" filepath="$PROJECT_DIR$/MGLangEditor/MGLangEditor.iml" />
       <module fileurl="file://$PROJECT_DIR$/richtextfx/richtextfx.iml" filepath="$PROJECT_DIR$/richtextfx/richtextfx.iml" />
     </modules>
   </component>
