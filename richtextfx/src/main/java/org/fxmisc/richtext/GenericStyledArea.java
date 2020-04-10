@@ -3,6 +3,7 @@ package org.fxmisc.richtext;
 import static org.reactfx.EventStreams.*;
 import static org.reactfx.util.Tuples.*;
 
+import java.net.URL;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -731,7 +732,10 @@ public class GenericStyledArea<PS, SEG, S> extends Region
 
         this.setBackground(new Background(new BackgroundFill(Color.WHITE, CornerRadii.EMPTY, Insets.EMPTY)));
         getStyleClass().add("styled-text-area");
-        getStylesheets().add(StyledTextArea.class.getResource("styled-text-area.css").toExternalForm());
+        final URL url = StyledTextArea.class.getResource("styled-text-area.css");
+        if(url != null) {
+            getStylesheets().add(url.toExternalForm());
+        }
 
         // keeps track of currently used non-empty cells
         @SuppressWarnings("unchecked")

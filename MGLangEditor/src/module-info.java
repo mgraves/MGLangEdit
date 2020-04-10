@@ -4,4 +4,5 @@ module MGLangEditor {
     requires flowless;
     requires mg.richtextfx;
     exports net.groupmg.editor;
+    opens net.groupmg.editor;
 }
