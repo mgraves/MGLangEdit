@@ -5,12 +5,17 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import net.groupmg.editor.langs.plain.PlainLanguage;
+import net.groupmg.editor.langs.plain.PlainNode;
+
 
 public class MainApp extends Application {
 
+    private final PlainLanguage plainLanguage = new PlainLanguage();
+
     @Override
     public void start(Stage primaryStage) throws Exception{
-        EditorController controller = new EditorController();
+        EditorController<PlainNode, PlainLanguage> controller = new EditorController<>(this.plainLanguage);
         primaryStage.setTitle("MGLangEditor");
         primaryStage.setScene(new Scene(controller, 300, 275));
         primaryStage.show();
